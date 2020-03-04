@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GCSE Vocabulator</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="js/pagefunctions.js"></script>
+
+</head>
+
+<body>
+  <div id="logo-container">
+    <img id="logo" src="assets/logo.jpg"/>
+  </div>
+
+  <div id="search-box">
+    <input id="searchInput" type="text" placeholder="Search.." onfocusout="searchLostFocus();">
+  </div>
+
+  <div id="search-results" style="display:none; overflow-y: scroll">
+    <ul id="results-list">
+      <li class="myItem"></li>
+    </ul>
+  </div>
+
+  <div id="container">
+    <div id="card" class="w3-card"></div>
+  </div>
+  <div id="controls">
+    <button onclick="previousButtonClicked();" style="border-top-left-radius:10px"><</button>
+    <button onclick="flipButtonClicked();">Flip</button>
+    <button onclick="nextButtonClicked();" style="border-bottom-right-radius:10px">></button>
+  </div>
+</body>
+</html>
